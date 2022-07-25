@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Nav Bar Styling  */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list{
+    display: flex;
+    width: 58%;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 18px 33px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.nav-list li a:hover{
+    color: cyan;
+    background-color: black;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:33%;
+}
+.logo img{
+    width: 50%;
+}
+
+.rightNav{
+    width: 35%;
+    text-align: right;
+    padding: 0 30px;
+}
+
+#search{
+    padding: 10px 40px;
+    font-size: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.btn-sm{
+    padding: 8px 20px;
+    font-size: 13px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7)url(../img/back\ 1.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.background1{
+    background: rgba(0, 0, 0, 0.7)url(../img/back\ 2.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 7px;
+    top: 16px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+/* Home Page designing  */
+.firstsection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    color: white;
+    max-width: 80%;
+    margin: auto;
+    height: 95%;
+}
+
+.first{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second img{
+    height: 520px;
+}
+
+.text-big{
+    font-size: 33px;
+    margin: 20px 0px;
+}
+
+.text-small{
+    font-size: 18px;
+    margin: 30px 0px;
+    font-style: italic;
+}
+
+.btn{
+    padding: 8px 20px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+    color: cyan;
+    border: 2px solid black
+}
+
+.Section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 85%;
+    margin: 40px auto;
+}
+
+.Section-mid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 85%;
+    margin: 40px auto;
+}
+
+.content1{
+    padding: 20px 50px;
+    font-family: 'Merriweather', serif;
+}
+
+.secright img{
+    height: 280px;
+    border: 2px solid black;
+    border-radius: 22px;
+}
+
+/* To create Animation using JavaScript */
+
+.move{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.7s ease;
+}
+
+.move.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+/* To create animation using only CSS 
+.secright{
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: 1s;
+    animation-delay: 2s;
+}
+
+@keyframes move{
+    from{
+        margin-top: 500px;
+    }
+    to{
+        margin-top: 0px;
+    }
+    
+} */
+
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/bg1.jpg')no-repeat center center/cover;
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+.touch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    max-width: 80%;
+    margin: auto;
+    height: 95%;
+}
+
+.get{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 30px 70px;
+    padding: 27px 53px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    margin: 8px 10px;
+}
+.info img{
+    height: 37px;
+    margin: 10px 37px;
+    padding: 10px 19px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 70px;
+    padding: 27px 45px;
+    width: 40%;
+    border: 3px solid rgb(74 120 167);
+    box-shadow: 10px -10px rgb(74 120 167);
+    border-radius: 20px;
+    align-items: center;
+}
+
+#box{
+    padding: 6px 35px;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+
+#box1{
+    padding: 25px 35px;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+
+.foot{
+    text-align: center;
+    padding: 14px 10px;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    background-color: black;
+    color: white;
+}
